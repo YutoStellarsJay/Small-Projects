@@ -1,0 +1,9 @@
+# .NET build
+**/bin/
+**/obj/
+# C++ compile
+**a.out
+
+# Visual Studio
+.vs/
+**/.vscode/
