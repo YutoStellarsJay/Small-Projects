@@ -11,6 +11,7 @@ class WebsocketsServer
         while (Console.KeyAvailable)
             Console.ReadKey(true);
     }
+    
     static async Task Say(string tosay, bool witheffect, int fulltime)
     {
         if (witheffect)
@@ -28,6 +29,7 @@ class WebsocketsServer
     }
     static async Task Main()
     {
+        
         await Say("This program is a websocket server that serves files inside \"public\" and runs on localhost 8000 but ONLY for html", true, 1000);
         if (!HttpListener.IsSupported)
         {
